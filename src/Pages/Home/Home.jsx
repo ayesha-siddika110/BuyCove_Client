@@ -8,9 +8,11 @@ const Home = () => {
         <div>
             {/* advertise banner */}
             <Slider></Slider>
-            
-            {/* some animation or other , like small cards*/}
-            <SmallCards></SmallCards>
+
+            {/* some animation or other , like small cards*/} {/**
+             * TODO: swiper js
+             */}
+            <SmallCards></SmallCards> 
 
             {/* deal For Today */}
             <DealForToday></DealForToday>

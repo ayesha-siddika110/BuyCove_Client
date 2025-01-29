@@ -1,12 +1,15 @@
 
 import img1 from '../../../assets/Products/download (6).jfif'
-import img2 from '../../../assets/Products/download (6).jfif'
+import img2 from '../../../assets/Products/download (7).jfif'
+import PrimaryHeading from '../../Share/PrimaryHeading/PrimaryHeading';
 const SmallCards = () => {
 
     return (
-        <div className='grid grid-cols-4 py-14'>
+        <>
+        <p className=' pl-[5%]'><PrimaryHeading text={"Top Selling"}></PrimaryHeading></p>
+        <div className='grid grid-cols-5 py-14 group'>
             <div className='p-5'>
-                <img src={img1} className='w-[200px] h-[200px] m-auto object-cover rounded-full' alt="" />
+                <img src={img1} className='w-[200px] group-hover:scale-110 h-[200px] m-auto object-cover rounded-full' alt="" />
                 <p className='text-center pt-3'>Lorem ipsum </p>
             </div>
             <div className='p-5'>
@@ -14,15 +17,20 @@ const SmallCards = () => {
                 <p className='text-center pt-3'>Lorem ipsum </p>
             </div>
             <div className='p-5'>
-                <img src={img1} className='w-[200px] h-[200px] object-cover m-auto rounded-full' alt="" />
+                <img src={img2} className='w-[200px] h-[200px] m-auto object-cover rounded-full' alt="" />
                 <p className='text-center pt-3'>Lorem ipsum </p>
             </div>
             <div className='p-5'>
                 <img src={img1} className='w-[200px] h-[200px] object-cover m-auto rounded-full' alt="" />
+                <p className='text-center pt-3'>Lorem ipsum </p>
+            </div>
+            <div className='p-5'>
+                <img src={img2} className='w-[200px] h-[200px] object-cover m-auto rounded-full' alt="" />
                 <p className='text-center pt-3'>Lorem ipsum </p>
             </div>
             
         </div>
+        </>
     );
 };
 
