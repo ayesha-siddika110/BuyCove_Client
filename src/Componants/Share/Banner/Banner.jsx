@@ -12,7 +12,7 @@ const Banner = ({ heading, subHeading }) => {
             }}
         >
             <div className='md:w-[50%] w-[80%] h-full flex flex-col justify-center m-auto'>
-                <p className='text-orange-600 text-4xl uppercase'>| {heading}</p>
+                <p className='text-orange-500 text-4xl uppercase'>| {heading}</p>
                 <p className='text-base-300 uppercase pt-3 tracking-[5px]'>{subHeading}</p>
             </div>
 

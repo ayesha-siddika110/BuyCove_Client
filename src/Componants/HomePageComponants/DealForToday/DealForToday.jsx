@@ -9,11 +9,11 @@ const DealForToday = () => {
         <div className="w-[95%] m-auto">
             <PrimaryHeading text={"Deal For Today"}></PrimaryHeading>
 
-            <div className="flex gap-6">
+            <div className="md:flex gap-6">
                 {/* left section  category top products*/}
-                <section className="w-[20%] text-lg bg-white p-6">
+                <section className="md:w-[20%] text-lg bg-white p-6">
                     <p className="text-center font-semibold text-2xl pb-3 border-b-2">Category</p>
-                    <ul className="">
+                    <ul className="flex md:flex-col gap-3 overflow-scroll">
                         <li className="border-b-2 hover:border-orange-600 cursor-pointer py-2 ">Beg</li>
                         <li className="border-b-2 hover:border-orange-600 cursor-pointer py-2 ">Mobiles</li>
                         <li className="border-b-2 hover:border-orange-600 cursor-pointer py-2 ">Parts</li>
@@ -33,7 +33,7 @@ const DealForToday = () => {
 
                 </section>
                 {/* right Section */}
-                <section className="w-[80%] grid grid-cols-4 gap-6">
+                <section className="w-[80%] m-auto  grid lg:grid-cols-4 md:grid-cols-3 grid-cols-1 mt-6 md:mt-0 gap-6">
                     <ShopCard></ShopCard>
                     <ShopCard></ShopCard>
                     <ShopCard></ShopCard>
